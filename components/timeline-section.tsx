@@ -7,10 +7,10 @@ import { Calendar, MapPin, Briefcase } from "lucide-react"
 const experiences = [
   {
     id: 1,
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Solutions",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
+    title: "Software Developer",
+    company: "KophyTech",
+    location: "Remote",
+    period: "2025 - Present",
     description: "Leading development of scalable web applications and mentoring junior developers.",
     achievements: [
       "Increased application performance by 40%",
@@ -20,13 +20,13 @@ const experiences = [
   },
   {
     id: 2,
-    title: "Full Stack Developer",
-    company: "InnovateLab",
-    location: "Austin, TX",
-    period: "2020 - 2022",
-    description: "Developed and maintained multiple client projects using modern web technologies.",
+    title: "Software Developer",
+    company: "Artification",
+    location: "Remote",
+    period: "2024 - 2025",
+    description: "Built scalable healthcare applications using Django and modern frontend technologies",
     achievements: [
-      "Delivered 15+ successful projects",
+      "Collaborated with designers and stakeholders to deliver complete product features.",
       "Reduced deployment time by 60%",
       "Improved code coverage to 95%",
     ],
@@ -34,14 +34,15 @@ const experiences = [
   {
     id: 3,
     title: "Backend Developer",
-    company: "DataFlow Systems",
+    company: "Fedus Technologies",
     location: "Remote",
-    period: "2019 - 2020",
+    period: "2023 - 2024",
     description: "Built robust APIs and data processing pipelines for enterprise clients.",
     achievements: [
       "Processed 1M+ daily transactions",
       "Reduced API response time by 50%",
       "Implemented real-time data streaming",
+      "Designed and developed fintech applications supporting digital wallets, transfers, and bill payments."
     ],
   },
 ]

@@ -6,8 +6,8 @@ import { useRef, useState } from "react"
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react"
 
 const socialLinks = [
-  { name: "GitHub", icon: Github, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
+  { name: "GitHub", icon: Github, href: "https://github.com/TLarsh" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/adeyemi-samuel-6b704a209" },
   { name: "Twitter", icon: Twitter, href: "#" },
 ]
 
@@ -79,7 +79,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium text-white">Email</p>
-                    <p className="text-sm text-gray-400">john.doe@example.com</p>
+                    <p className="text-sm text-gray-400">adeyemisam2015.com</p>
                   </div>
                 </div>
 
@@ -89,7 +89,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium text-white">Phone</p>
-                    <p className="text-sm text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-sm text-gray-400">+234 810-2771-686</p>
                   </div>
                 </div>
 
@@ -99,7 +99,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium text-white">Location</p>
-                    <p className="text-sm text-gray-400">San Francisco, CA</p>
+                    <p className="text-sm text-gray-400">Ibadan, Nigeria</p>
                   </div>
                 </div>
               </div>

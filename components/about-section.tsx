@@ -8,10 +8,13 @@ const skills = [
   { name: "Node.js", level: 90 },
   { name: "Python", level: 88 },
   { name: "Django", level: 85 },
+  { name: "TypeScript", level: 80 },
   { name: "FastAPI", level: 82 },
   { name: "MongoDB", level: 80 },
   { name: "PostgreSQL", level: 85 },
   { name: "Docker", level: 78 },
+  { name: "Pandas", level: 70 },
+  { name: "Numpy", level: 75 },
 ]
 
 const techStack = ["React", "Node.js", "Python", "Django", "FastAPI", "MongoDB", "PostgreSQL", "Docker"]
