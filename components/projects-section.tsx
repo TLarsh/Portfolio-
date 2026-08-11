@@ -9,22 +9,23 @@ const projects = [
     id: 1,
     title: "E-commerce Platform",
     description:
-      "A comprehensive e-commerce solution featuring user authentication, payment processing, inventory management, and an intuitive admin dashboard. Built with modern web technologies for optimal performance.",
-    image: "/images/ecommerce-dashboard.png",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      "CareClink a smart, real‑time appointment scheduling system that keeps everyone in sync. \n" +
+      "Book, Reschedule, Stay Notified, Clients, interpreters, and staff get instant in‑app, push, and email alerts.",
+    image: "/images/Careclink.png",
+    technologies: ["React", "Node.js", "MongoDB", "Next.js"],
     github: "#",
     live: "#",
     featured: true,
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Todo App",
     description:
       "A collaborative project management platform with real-time updates, file sharing, team communication, and advanced analytics. Designed for modern remote teams.",
-    image: "/images/task-management.png",
-    technologies: ["React", "Django", "PostgreSQL", "WebSocket"],
-    github: "#",
-    live: "#",
+    image: "/images/todo.png",
+    technologies: ["React+Vite", "Express", "MongoDB", "DaisyUI", "TailwindCSS"],
+    github: "https://github.com/TLarsh/todo",
+    live: "https://todo-kx0b.onrender.com/create",
     featured: true,
   },
   {
