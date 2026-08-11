@@ -7,14 +7,14 @@ import { ExternalLink, Github } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "CareClink",
     description:
       "CareClink a smart, real‑time appointment scheduling system that keeps everyone in sync. \n" +
       "Book, Reschedule, Stay Notified, Clients, interpreters, and staff get instant in‑app, push, and email alerts.",
     image: "/images/Careclink.png",
-    technologies: ["React", "Node.js", "MongoDB", "Next.js"],
+    technologies: ["React", "Node.js", "MongoDB", "Express", "TailwindCSS"],
     github: "#",
-    live: "#",
+    live: "https://interpreter-jade.vercel.app/auth",
     featured: true,
   },
   {
@@ -30,10 +30,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "Analytics Dashboard",
+    title: "YummyBites",
     description:
-      "A comprehensive data visualization platform featuring interactive charts, real-time metrics, custom reporting, and advanced filtering capabilities for business intelligence.",
-    image: "/images/analytics-dashboard.png",
+      "YummyBites is a smart, real-time food ordering and delivery platform that brings your favorite restaurants to your fingertips.",
+    image: "/images/Yummybites.png",
     technologies: ["React", "Python", "FastAPI", "Chart.js"],
     github: "#",
     live: "#",
