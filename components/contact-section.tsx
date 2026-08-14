@@ -102,7 +102,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium text-white">Email</p>
-                    <p className="text-sm text-gray-400">adeyemisam2015.com</p>
+                    <p className="text-sm text-gray-400">adeyemisam2015@gmail.com</p>
                   </div>
                 </div>
 

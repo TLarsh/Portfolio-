@@ -50,15 +50,17 @@
 // }
 
 
-
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+//   port: 587,
+  port: 465,
+  secure: true,
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD,
   },
 })
 
@@ -68,49 +70,34 @@ export async function POST(request: Request) {
 
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
-        { error: "All fields are required." },
+        { error: "All fields are required" },
         { status: 400 }
       )
     }
 
     await transporter.sendMail({
-      from: `"Portfolio Contact" <${process.env.SMTP_USER}>`,
+      from: `"Portfolio Contact" <${process.env.GMAIL_USER}>`,
       to: process.env.CONTACT_EMAIL,
       replyTo: email,
-      subject: `Portfolio Contact: ${subject}`,
+      subject: subject,
       text: `
 Name: ${name}
 Email: ${email}
-Subject: ${subject}
 
 Message:
 ${message}
       `,
-      html: `
-        <div style="font-family: Arial, sans-serif; line-height: 1.6;">
-          <h2>New Portfolio Contact</h2>
-
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Subject:</strong> ${subject}</p>
-
-          <hr />
-
-          <h3>Message</h3>
-          <p>${message.replace(/\n/g, "<br />")}</p>
-        </div>
-      `,
     })
 
-    return NextResponse.json(
-      { message: "Message sent successfully." },
-      { status: 200 }
-    )
+    return NextResponse.json({
+      success: true,
+      message: "Message sent successfully",
+    })
   } catch (error) {
-    console.error("Email sending error:", error)
+    console.error("Email error:", error)
 
     return NextResponse.json(
-      { error: "Failed to send message." },
+      { error: "Failed to send message" },
       { status: 500 }
     )
   }
