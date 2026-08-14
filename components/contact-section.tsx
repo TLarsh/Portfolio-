@@ -23,16 +23,39 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  e.preventDefault()
+  setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
 
-    setIsSubmitting(false)
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    const data = await response.json()
+
+    if (!response.ok) {
+      throw new Error(data.error || "Failed to send message")
+    }
+
     alert("Message sent successfully!")
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    })
+  } catch (error) {
+    console.error(error)
+    alert("Failed to send message. Please try again.")
+  } finally {
+    setIsSubmitting(false)
   }
+}
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
