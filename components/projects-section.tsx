@@ -39,39 +39,39 @@ const projects = [
     live: "#",
     featured: false,
   },
-  {
-    id: 4,
-    title: "Social Media App",
-    description:
-      "A mobile-first social networking platform with user profiles, real-time messaging, content sharing, and advanced privacy controls. Built for seamless user engagement.",
-    image: "/images/social-media-app.png",
-    technologies: ["React Native", "Node.js", "MongoDB", "Socket.io"],
-    github: "#",
-    live: "#",
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "Learning Management System",
-    description:
-      "An educational platform with course creation tools, progress tracking, interactive quizzes, and video streaming capabilities. Designed for online education providers.",
-    image: "/images/learning-platform.png",
-    technologies: ["React", "Django", "PostgreSQL", "AWS"],
-    github: "#",
-    live: "#",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Financial Dashboard",
-    description:
-      "A sophisticated financial tracking application with portfolio management, real-time market data, automated reporting, and risk analysis tools for investment professionals.",
-    image: "/images/financial-dashboard.png",
-    technologies: ["React", "Node.js", "PostgreSQL", "D3.js"],
-    github: "#",
-    live: "#",
-    featured: false,
-  },
+  // {
+  //   id: 4,
+  //   title: "Social Media App",
+  //   description:
+  //     "A mobile-first social networking platform with user profiles, real-time messaging, content sharing, and advanced privacy controls. Built for seamless user engagement.",
+  //   image: "/images/social-media-app.png",
+  //   technologies: ["React Native", "Node.js", "MongoDB", "Socket.io"],
+  //   github: "#",
+  //   live: "#",
+  //   featured: false,
+  // },
+  // {
+  //   id: 5,
+  //   title: "Learning Management System",
+  //   description:
+  //     "An educational platform with course creation tools, progress tracking, interactive quizzes, and video streaming capabilities. Designed for online education providers.",
+  //   image: "/images/learning-platform.png",
+  //   technologies: ["React", "Django", "PostgreSQL", "AWS"],
+  //   github: "#",
+  //   live: "#",
+  //   featured: false,
+  // },
+  // {
+  //   id: 6,
+  //   title: "Financial Dashboard",
+  //   description:
+  //     "A sophisticated financial tracking application with portfolio management, real-time market data, automated reporting, and risk analysis tools for investment professionals.",
+  //   image: "/images/financial-dashboard.png",
+  //   technologies: ["React", "Node.js", "PostgreSQL", "D3.js"],
+  //   github: "#",
+  //   live: "#",
+  //   featured: false,
+  // },
 ]
 
 export default function ProjectsSection() {
