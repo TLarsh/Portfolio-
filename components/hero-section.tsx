@@ -92,14 +92,15 @@ export default function HeroSection() {
             View My Work
           </motion.button>
 
-          <motion.button
+          <motion.a
+            href="SAMUEL_ADEYEMI_FULLSTACK.pdf"
             className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             <Download size={18} />
             Download CV
-          </motion.button>
+          </motion.a>
 
           <motion.button
             className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl"
