@@ -34,7 +34,7 @@ const projects = [
     description:
       "YummyBites is a smart, real-time food ordering and delivery platform that brings your favorite restaurants to your fingertips.",
     image: "/images/Yummybites.png",
-    technologies: ["React", "Python", "FastAPI", "Chart.js"],
+    technologies: ["React", "Python", "Chart.js"],
     github: "#",
     live: "#",
     featured: false,
