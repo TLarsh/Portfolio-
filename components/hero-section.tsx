@@ -93,7 +93,7 @@ export default function HeroSection() {
           </motion.button>
 
           <motion.a
-            href="SAMUEL_ADEYEMI_FULLSTACK.pdf"
+            href="Samuel_Adeyemi_Full_Stack_Software_Engineer_CV.pdf"
             className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
