@@ -10,7 +10,7 @@ const experiences = [
     title: "Software Developer",
     company: "KophyTech",
     location: "Remote",
-    period: "2025 - Present",
+    period: "2026 - Present",
     description: "Leading development of scalable web applications and mentoring junior developers.",
     achievements: [
       "Increased application performance by 40%",
